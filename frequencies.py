@@ -3,5 +3,14 @@
 
 def frequencies(items):
     frequencies = {}
-    # Your code goes here
+    
+    for key in items:
+        if not isinstance(key,str):
+            items.remove(key)
+            items.append(str(key))
+    
+    for i in items:
+        v = items.count(i)
+        frequencies[i] = v
+    
     return frequencies
