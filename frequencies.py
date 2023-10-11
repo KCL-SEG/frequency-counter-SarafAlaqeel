@@ -3,5 +3,13 @@
 
 def frequencies(items):
     frequencies = {}
-    # Your code goes here
+    newList =[]
+    
+    for key in items:
+            newList.append(str(key))
+    
+    for i in newList:
+        v = newList.count(i)
+        frequencies[i] = v
+    
     return frequencies
